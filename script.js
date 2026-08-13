@@ -1,42 +1,143 @@
-// --- Mobile Menu Toggle ---
-const menuIcon = document.querySelector('#menu-icon');
-const navbar = document.querySelector('.navbar');
+// =========================================================
+// MOBILE MENU
+// =========================================================
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-};
+const menuIcon = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
 
-// --- Active Link Highlight on Scroll ---
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+// Open / Close Mobile Menu
 
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        }
+menuIcon.addEventListener("click", () => {
+
+    menuIcon.classList.toggle("bx-x");
+
+    navbar.classList.toggle("active");
+
+});
+
+
+
+// =========================================================
+// CLOSE MENU WHEN NAVIGATION LINK IS CLICKED
+// =========================================================
+
+const navLinks = document.querySelectorAll(".navbar a");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        menuIcon.classList.remove("bx-x");
+
+        navbar.classList.remove("active");
+
     });
 
-    // Close mobile navbar when clicking a link (scrolling)
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
-};
- 
-// --- Typed.js Initialization ---
-// Matches the <span class="multiple-text"></span> in your index.html
-const typed = new Typed('.multiple-text', {
-    strings: ['BCA Student', 'Frontend Developer And', 'UI/UX Designer'],
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 1000,
-    loop: true
 });
+
+
+
+// =========================================================
+// ACTIVE NAVIGATION LINK ON SCROLL
+// =========================================================
+
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+
+    const scrollPosition = window.scrollY + 200;
+
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop;
+
+        const sectionHeight = section.offsetHeight;
+
+        const sectionId = section.getAttribute("id");
+
+
+        if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+        ) {
+
+            navLinks.forEach(link => {
+
+                link.classList.remove("active");
+
+            });
+
+
+            const activeLink = document.querySelector(
+                `.navbar a[href="#${sectionId}"]`
+            );
+
+
+            if (activeLink) {
+
+                activeLink.classList.add("active");
+
+            }
+
+        }
+
+    });
+
+});
+
+
+
+// =========================================================
+// TYPED.JS
+// =========================================================
+
+const typedElement = document.querySelector(".multiple-text");
+
+
+if (typedElement && typeof Typed !== "undefined") {
+
+    new Typed(".multiple-text", {
+
+        strings: [
+            "BCA Student",
+            "Frontend Developer",
+            "UI/UX Designer",
+            "AI/ML Learner"
+        ],
+
+        typeSpeed: 100,
+
+        backSpeed: 50,
+
+        backDelay: 1000,
+
+        loop: true
+
+    });
+
+}
+
+
+
+// =========================================================
+// CONTACT FORM
+// =========================================================
+
+const contactForm = document.querySelector("#contact-form");
+
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        alert("Thank you! Your message has been submitted.");
+
+        contactForm.reset();
+
+    });
+
+}

@@ -1,201 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>Ranjita</title>
-</head>
-<body>
-    <!-- HEADER SECTION -->
-    <header class="header">
-        <a href="#home" class="logo">Ranjita Naik </a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+    <title>Ranjita Naik | Portfolio</title>
+
+    <!-- Boxicons -->
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">Ranjita Naik</a>
+
+        <!-- Mobile Menu -->
+        <i class="bx bx-menu" id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#testimonials">Testimonial</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
-    <!-- Home Section -->
 
-    <section id="home" class="home">
-        <div class="home-img">
-            <img src="assets/about.jpeg" alt="Profile Image">
-        </div>
+    <!-- ================= HOME ================= -->
+
+    <section class="home" id="home">
+
         <div class="home-content">
+
             <h3>Hello, Myself</h3>
+
             <h1>Ranjita Naik</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Hi, I'm Ranjita Naik, a BCA student and aspiring Web Developer.
-               I love creating clean, responsive, and user-friendly websites.
-                 Currently, I am learning HTML, CSS, JavaScript, Python, and Git while building projects to enhance my skills.</p>
-</p>
-            <div class="social-media">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-            </div>
-            <a href="#" class="btn">Download CV</a>
-        </div>
 
-        
-    </section>
+            <h3>
+                And I'm a
+                <span class="multiple-text"></span>
+            </h3>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span> </h2>
-            <h3>I'm a <span>Frontend Developer</span></h3>
-            <p>I build responsive and modern websites with HTML,CSS,JavaScript, and Bootstarp.I enjoy learning
-                new technologies and improving my skills through pratical projects.
+            <p>
+                Hi, I'm Ranjita Naik, a BCA student and aspiring Web Developer.
+                I love creating clean, responsive, and user-friendly websites.
+                Currently, I am learning HTML, CSS, JavaScript, Python, and Git
+                while building projects to enhance my skills.
             </p>
-            <a href="#" class="btn">Read more</a>
+
+            <!-- Social Media -->
+
+            <div class="social-media">
+
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+
+                <a href="#" target="_blank" aria-label="GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+
+                <a href="#" target="_blank" aria-label="Facebook">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+
+            </div>
+
+            <!-- CV -->
+            <a href="#" class="btn">Download CV</a>
+
         </div>
-        <div class="about-img">
-            <img src="assets/Pr.jpeg" alt="">
+
+
+        <div class="home-img">
+
+            <img
+                src="assets/photo.jpeg"
+                alt="Ranjita Naik Profile Photo"
+            >
+
         </div>
+
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2 class="heading">My <span>Services</span> </h2>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+
+            <img
+                src="assets/about.jpeg"
+                alt="Ranjita Naik"
+            >
+
+        </div>
+
+
+        <div class="about-content">
+
+            <h2 class="heading">
+                About <span>Me</span>
+            </h2>
+
+            <h3>
+                I'm a <span>Frontend Developer</span>
+            </h3>
+
+            <p>
+                I build responsive and modern websites using HTML, CSS,
+                JavaScript, and Bootstrap. I enjoy learning new technologies
+                and improving my skills through practical projects.
+            </p>
+
+            <a href="#services" class="btn">Read More</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="services" id="services">
+
+        <h2 class="heading">
+            My <span>Services</span>
+        </h2>
+
 
         <div class="services-container">
+
+            <!-- Web Development -->
+
             <div class="services-box">
-                <i class='bx bx-code'></i>
+
+                <i class="bx bx-code"></i>
+
                 <h3>Web Development</h3>
-                <p>I build responsive and user-friendly websites using HYML,CSS,JavaScript,and Bootstrap.
-                    My focus is onn creating clean,modern,and functional web interfaces. </p>
-                <a href="#" class="btn">Read More</a>
+
+                <p>
+                    I build responsive and user-friendly websites using
+                    HTML, CSS, JavaScript, and Bootstrap. My focus is on
+                    creating clean, modern, and functional web interfaces.
+                </p>
+
+                <a href="#contact" class="btn">Contact Me</a>
+
             </div>
 
+
+            <!-- UI/UX -->
+
             <div class="services-box">
-                <i class='bx bx-palette' ></i>
+
+                <i class="bx bx-palette"></i>
+
                 <h3>UI/UX Design</h3>
-                <p>I design simple and intuitive user interfaces taht provide a smooth user experience.
-                    I enjoy creating layouts that are clean,responsive, and easy to use. </p>
-                <a href="#" class="btn">Read More</a>
+
+                <p>
+                    I design simple and intuitive user interfaces that
+                    provide a smooth user experience. I enjoy creating
+                    clean, responsive, and easy-to-use layouts.
+                </p>
+
+                <a href="#contact" class="btn">Contact Me</a>
+
             </div>
 
+
+            <!-- App Development -->
+
             <div class="services-box">
-                <i class='bx bxl-android' ></i>
+
+                <i class="bx bxl-android"></i>
+
                 <h3>App Development</h3>
-                <p>I have a basic understanding of mobile app development and enjoy exploring modern technologies.
-                    I am always learning new tools to improve my skills.
+
+                <p>
+                    I have a basic understanding of mobile app development
+                    and enjoy exploring modern technologies. I am always
+                    learning new tools to improve my skills.
                 </p>
-                <a href="#" class="btn">Read More</a>
+
+                <a href="#contact" class="btn">Contact Me</a>
+
             </div>
+
+
+            <!-- AI / ML -->
 
             <div class="services-box">
-                <i class='bx bx-chip' ></i>
-                <h3>AI/ML</h3>
-                <p>I'm completed an AI/ML internship where I worked on practical tasks and learned the basic of
-                    machine learning.I continue to explore AI concepts through hands-on-projects.
+
+                <i class="bx bx-chip"></i>
+
+                <h3>AI / ML</h3>
+
+                <p>
+                    I completed an AI/ML internship where I worked on
+                    practical tasks and learned the basics of machine
+                    learning. I continue to explore AI concepts through
+                    hands-on projects.
                 </p>
-                <a href="#" class="btn">Read More</a>
+
+                <a href="#contact" class="btn">Contact Me</a>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- Testimonials Section -->
 
-    <section id="testimonials" class="testimonials">
-        <div class="testimonials-box">
-            <h2 class="heading">Testimonials</h2>
+    <!-- ================= TESTIMONIALS ================= -->
 
-            <div class="wrapper">
-                <div class="testimonial-item">
-                    <img src="assets/1.jpeg" alt="">
-                    <h2>Raghavendra</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
-                    <p>"It was good working with Ranjita during the internship.She completed her tasks 
-                        on time,stayed committed to the learning process,and showed good progress."
-                    </p>
+    <section class="testimonials" id="testimonials">
+
+        <h2 class="heading">
+            Testimonials
+        </h2>
+
+
+        <div class="wrapper">
+
+            <!-- Testimonial 1 -->
+
+            <div class="testimonial-item">
+
+                <img
+                    src="assets/1.jpeg"
+                    alt="Raghavendra"
+                >
+
+                <h2>Raghavendra</h2>
+
+                <div class="rating">
+
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+
                 </div>
 
-                <div class="testimonial-item">
-                    <img src="assets/2.jpeg" alt="">
-                    <h2>Ravi</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
-                    <p>"She completed her task with care and interest and it was good to 
-                        see her learning step by step"
-                    </p>                        
-                    
-                </div>
+                <p>
+                    "It was good working with Ranjita during the internship.
+                    She completed her tasks on time, stayed committed to the
+                    learning process, and showed good progress."
+                </p>
 
-                <div class="testimonial-item">
-                    <img src="assets/3.jpeg" alt="">
-                    <h2>Vinod Badiger</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
-                    <p>"She completed her tasks on time and was consistent throughout the internship.
-                        She showed a good interest in learning AI/ML."
-                    </p>
-                </div>
             </div>
+
+
+            <!-- Testimonial 2 -->
+
+            <div class="testimonial-item">
+
+                <img
+                    src="assets/2.jpeg"
+                    alt="Ravi"
+                >
+
+                <h2>Ravi</h2>
+
+                <div class="rating">
+
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+
+                </div>
+
+                <p>
+                    "She completed her task with care and interest, and it
+                    was good to see her learning step by step."
+                </p>
+
+            </div>
+
+
+            <!-- Testimonial 3 -->
+
+            <div class="testimonial-item">
+
+                <img
+                    src="assets/3.jpeg"
+                    alt="Vinod Badiger"
+                >
+
+                <h2>Vinod Badiger</h2>
+
+                <div class="rating">
+
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+
+                </div>
+
+                <p>
+                    "She completed her tasks on time and was consistent
+                    throughout the internship. She showed a good interest
+                    in learning AI/ML."
+                </p>
+
+            </div>
+
         </div>
+
     </section>
 
-    <!-- Contact Section -->
 
-    <section id="contact" class="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+    <!-- ================= CONTACT ================= -->
 
-        <form action="#">
+    <section class="contact" id="contact">
+
+        <h2 class="heading">
+            Contact <span>Me</span>
+        </h2>
+
+
+        <form id="contact-form">
+
             <div class="input-box">
-                <input type="text" name="name" placeholder="Full Name">
-                <input type="email" name="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" name="number" placeholder="Phone Number">
-                <input type="text" name="subject" placeholder="Email Subject">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                >
+
             </div>
 
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+
+            <div class="input-box">
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                >
+
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Email Subject"
+                >
+
+            </div>
+
+
+            <textarea
+                name="message"
+                rows="10"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
         </form>
+
     </section>
 
-    <!-- Footer Section -->
+
+    <!-- ================= FOOTER ================= -->
 
     <footer class="footer">
+
         <div class="social">
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
+
+            <a href="#" target="_blank" aria-label="LinkedIn">
+                <i class="bx bxl-linkedin"></i>
+            </a>
+
+            <a href="#" target="_blank" aria-label="GitHub">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="#" target="_blank" aria-label="Facebook">
+                <i class="bx bxl-facebook"></i>
+            </a>
+
+            <a href="#" target="_blank" aria-label="Instagram">
+                <i class="bx bxl-instagram"></i>
+            </a>
+
         </div>
 
+
         <p class="copyright">
-            © Ranjita N - All Rights Reserved
+            © 2026 Ranjita Naik - All Rights Reserved
         </p>
+
     </footer>
+
+
+    <!-- ================= JAVASCRIPT LIBRARIES ================= -->
+
+    <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Your JavaScript -->
     <script src="script.js"></script>
+
 </body>
+
 </html>
