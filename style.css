@@ -1,9 +1,13 @@
 /* --- Global Variables & Resets --- */
 :root {
-    --bg-color: #101214eb;
-    --second-bg-color: #443c2e;
-    --text-color: #f1dff1;
-    --main-color: #0ef;
+    --bg-color: #FFF;
+    --second-bg-color: #d5fdf9;
+    --text-color: #2f063e;
+    --main-color: #007F;
+}
+html{ 
+    font-size: 62.5%;
+    overflow-x:hidden;
 }
 
 * {
@@ -60,27 +64,30 @@ section {
     top: 0; left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: #7889ea;
+    backdrop-filter:blur(12px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
-    transition: .3s;
+    border-bottom: .1rem solid rgba(255, 255, 255,0.08);
+    transition:all 0.5s ease;
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--text-color);
-    font-weight: 600;
-    cursor: default;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .navbar a {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: var(--text-color);
     margin-left: 4rem;
-    transition: .3s;
+    font-weight: 700;
+    transition: 0.3s ease;
 }
 
 .navbar a:hover, .navbar a.active {
@@ -103,9 +110,33 @@ section {
 }
 
 .home-img img {
-    width: 32vw;
+    width: 25vw;
     border-radius: 50%;
-    box-shadow: 0 0 2rem var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    animation: floatImage 4s ease-in-out infinite;
+    transition:0.4s ease;
+}
+.home-img img{
+    animation: floatImage 4s ease-in-out infinite;
+}
+.home-img img:hover{
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 0 20px var(--main-color),
+                0 0 40px var(--main-color),
+                0 0 70px var(--main-color);
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-18px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .home-content h3 {
@@ -241,7 +272,7 @@ section {
 }
 
 .rating i {
-    color: #ffc107;
+    color: #d6a513;
     font-size: 2rem;
     margin: 1rem 0.2rem;
 }

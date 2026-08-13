@@ -30,11 +30,11 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
-
+ 
 // --- Typed.js Initialization ---
 // Matches the <span class="multiple-text"></span> in your index.html
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'BCA Student', 'UI/UX Designer'],
+    strings: ['BCA Student', 'Frontend Developer And', 'UI/UX Designer'],
     typeSpeed: 100,
     backSpeed: 50,
     backDelay: 1000,
